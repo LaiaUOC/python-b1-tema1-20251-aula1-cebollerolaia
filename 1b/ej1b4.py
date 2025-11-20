@@ -65,7 +65,9 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
+    average  =np.mean(list_numbers)
+    stdev = np.std(list_numbers)
+    return average, stdev
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
