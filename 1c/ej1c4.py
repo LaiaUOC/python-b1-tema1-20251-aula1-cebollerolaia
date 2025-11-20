@@ -41,7 +41,13 @@ Exemple:
 
 
 def is_palindrome(word):
-    # Write here your code
+    if len(word) == 0:
+        return True
+    else:
+        if word[0] == word[-1]:
+            return is_palindrome(word[1:-1])
+        else:
+            return False
     pass
 
 
@@ -49,6 +55,6 @@ def is_palindrome(word):
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # word = "level"
 # print(f"Is '{word}' word palindrome?", is_palindrome(word))
-#
+
 # word = "juan"
 # print(f"Is '{word}' word palindrome?", is_palindrome(word))
