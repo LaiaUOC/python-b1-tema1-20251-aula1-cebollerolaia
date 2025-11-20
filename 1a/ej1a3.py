@@ -32,7 +32,11 @@ Exemple:
 '''
 
 def invert_text(text_chain:str):
-    # Write here your code
+    new_chain = ""
+    for i in range(len(text_chain)):
+        new_chain += text_chain[-(i+1)]
+
+    return new_chain
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 

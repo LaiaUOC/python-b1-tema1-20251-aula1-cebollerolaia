@@ -42,7 +42,15 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    # Write here your code
+    sum = 0
+    for i in list_numbers:
+        #Comprobar condiciones:
+        if not isinstance(i, int) or i<0: 
+            raise ValueError("lista incorrecta")
+        elif i%2 == 1:
+            sum += i
+    
+    return sum
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
